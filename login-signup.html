@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0" charset="utf-8">
+  <meta name="theme-color" content="#fff">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="icon" href="image/souq_icon2.png" type="icon">
+  <title>Employee Attendence Report</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  	<div class="d-flex" id="wrapper">
+
+	    <!-- Sidebar -->
+	    <div class="mt-4 pt-4" id="sidebar-wrapper">
+	      <div class="sidebar-heading text-white"><i class="fas fa-user-circle fa-lg"> &nbsp;</i>Admin ID</div>
+	      <div class="list-group list-group-flush">
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='dashboard.html'">Dashboard</a>
+	        <a href="#" class="active list-group-item list-group-item-action text-white" onclick="window.location.href='index.html'">Employee</a>
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='emp_dailylog.html'">Employee Daily Log</a>
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='#'">Login/Signup</a>
+	      </div>
+	    </div>
+	    <!-- /#sidebar-wrapper -->
+
+	    <!-- Page Content -->
+	    <div id="page-content-wrapper">
+
+		    <nav class="navbar navbar-expand-sm fixed-top p-0 shadow">
+		    	<h3 class="text-white mb-0 py-0 py-md-2 float-left">HERFY ADMIN &nbsp; &nbsp;
+		    		<button class="btn text-white px-1 py-1 m-0 shadow-none d-md-none d-lg-none d-xl-none" id="menu-toggle"><i class="fas fa-bars fa-2x"></i></button>
+		    	</h3>
+		    </nav>
+
+    		<div class="container mt-5">
+    			<div class="row mx-auto">
+    				<div class="col-md-3"></div>
+    				<div class="col-12 col-md-9">
+				        <div class="card mx-auto border-0 bg-transparent">
+				          <div class="card-header border-bottom-0 bg-transparent">
+				            <ul class="nav nav-tabs justify-content-center" id="pills-tab" role="tablist">
+				              <li class="nav-item">
+				                <a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true"><b>Login</b></a>
+				              </li>
+
+				              <li class="nav-item">
+				                <a class="nav-link" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false"><b>Register</b></a>
+				              </li>
+				            </ul>
+				          </div>
+
+				          <div class="card-body">
+				            <div class="tab-content" id="pills-tabContent">
+				              <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+				                <form>
+				                  <div class="form-group">
+				                    <input type="number" name="mob" class="form-control text-center" id="mob" placeholder="Mobile Number" required autofocus>
+				                  </div>
+
+				                  <div class="form-group">
+				                    <input type="password" name="password" class="form-control text-center" id="password" id="password" placeholder="Password" required>
+				                  </div>
+
+				                  <div class="text-center pt-4">
+				                    <button type="submit" class="btn btn-md" style="background-color: #3AAFA9; color: #fff;">Login</button>
+				                  </div>
+
+				                  <!-- <div class="text-center pt-2">
+				                    <a class="btn btn-link text-primary" href="#">Forgot Your Password?</a>
+				                  </div> -->
+				                </form>
+				              </div>
+
+				              <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
+				                <form>
+				                  <div class="form-group">
+				                    <input type="text" name="username" id="name" class="form-control text-center" placeholder="Full Name" required autofocus>
+				                  </div>
+				                  <div class="form-group">
+				                    <input type="number" name="mob" id="mob" class="form-control text-center" placeholder="Mobile Number" required>
+				                  </div>
+				                  <div class="form-group">
+				                    <input type="email" name="email" id="email" class="form-control text-center" placeholder="Email Address" required>
+				                  </div>
+				                  <div class="form-group">
+				                    <input type="password" name="password" class="form-control text-center" id="password" id="password" placeholder="Create Password" required>
+				                  </div>
+				                  <div class="form-group">
+				                    <input type="password" name="password" class="form-control text-center" id="password" id="password" placeholder="Confirm Password" required>
+				                  </div>
+
+				                  <div class="text-center py-1">
+				                    <button type="submit" class="btn btn-md" style="background-color: #3AAFA9; color: #fff;">Register</button>
+				                  </div>
+				                </form>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+					
+		</div>
+		<!-- /#page-content-wrapper -->
+
+	</div>
+	  <!-- /#wrapper -->
+
+
+  
+
+  <!-- SCRIPTS -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>

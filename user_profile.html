@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0" charset="utf-8">
+  <meta name="theme-color" content="#fff">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="icon" href="image/souq_icon2.png" type="icon">
+  <title>Employee Attendence Report</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style type="text/css">
+    .info_icon{
+      background-color: #000;
+      color: #fff;
+      border-radius: 50px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  	<div class="d-flex" id="wrapper">
+
+	    <!-- Sidebar -->
+	    <div class="mt-4 pt-4" id="sidebar-wrapper">
+	      <div class="sidebar-heading text-white"><i class="fas fa-user-circle fa-lg"> &nbsp;</i>Admin ID</div>
+	      <div class="list-group list-group-flush">
+	        <a href="#" class="list-group-item list-group-item-action text-white">Dashboard</a>
+	        <a href="#" class="active list-group-item list-group-item-action text-white" onclick="window.location.href='index.html'">Employee</a>
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='emp_dailylog.html'">Employee Daily Log</a>
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='#'">Login/Signup</a>
+	      </div>
+	    </div>
+	    <!-- /#sidebar-wrapper -->
+
+	    <!-- Page Content -->
+	    <div id="page-content-wrapper">
+
+		    <nav class="navbar navbar-expand-sm fixed-top p-0 shadow">
+		    	<h3 class="text-white mb-0 py-0 py-md-2 float-left">HERFY ADMIN &nbsp; &nbsp;
+		    		<button class="btn text-white px-1 py-1 m-0 shadow-none d-md-none d-lg-none d-xl-none" id="menu-toggle"><i class="fas fa-bars fa-2x"></i></button>
+		    	</h3>
+		    </nav>
+
+	    	
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4 col-lg-3 col-xl-2"></div>
+            <div class="col-12 col-md-8 col-lg-9 col-xl-10 mx-0">
+              <h4 class="mb-3 py-2" style="color: #3AAFA9;">User Information</h4>
+              <div class="row">
+                <div class="col-12">
+                      <div class="row mx-0 media">
+                        <img src="image/user_icon.png" width="100px" class="mr-3">
+                        <div class="media-body">
+                          <h5><b>User Name</b></h5>
+                          <p class="mb-1"><i class="fas fa-phone call info_icon p-2"></i>&nbsp; <b>9876543210</b></p>
+                          <p class="mb-1"><i class="fas fa-envelope info_icon p-2"></i>&nbsp; <b>abc@gmail.com</b></p>
+                        </div>
+                      </div>
+                        <br>
+
+                      
+                      <div class="row mx-0 mb-2">
+                        <div class="col-4 px-0">DOB</div>
+                        <div class="col-1 px-0"> : </div>
+                        <div class="col-7 px-0"><b>01-01-2019</b></div>
+                      </div>
+                      <div class="row mx-0 mb-2">
+                        <div class="col-4 px-0">Gender</div>
+                        <div class="col-1 px-0"> : </div>
+                        <div class="col-7 px-0"><b>Gender</b></div>
+                      </div>
+                      <div class="row mx-0 mb-2">
+                        <div class="col-4 px-0">Employee ID</div>
+                        <div class="col-1 px-0"> : </div>
+                        <div class="col-7 px-0"><b>1001</b></div>
+                      </div>
+                      <div class="row mx-0 mb-2">
+                        <div class="col-4 px-0">Vendor</div>
+                        <div class="col-1 px-0"> : </div>
+                        <div class="col-7 px-0"><b>Vendor</b></div>
+                      </div>
+                      <div class="row mx-0 mb-2">
+                        <div class="col-4 px-0">Branch</div>
+                        <div class="col-1 px-0"> : </div>
+                        <div class="col-7 px-0"><b>Branch Name</b></div>
+                      </div>
+                      <div class="row mx-0 mb-2">
+                        <div class="col-4 px-0">Department</div>
+                        <div class="col-1 px-0"> : </div>
+                        <div class="col-7 px-0"><b>Department Name</b></div>
+                      </div>
+                      <div class="row mx-0 mb-2">
+                        <div class="col-4 px-0">Hiring Date</div>
+                        <div class="col-1 px-0"> : </div>
+                        <div class="col-7 px-0"><b>01-01-2019</b></div>
+                      </div>
+                      <div class="row mx-0 mb-2">
+                        <div class="col-4 px-0">Designation</div>
+                        <div class="col-1 px-0"> : </div>
+                        <div class="col-7 px-0"><b>Designation</b></div>
+                      </div>
+                      <div class="row mx-0 mb-2">
+                        <div class="col-4 px-0">Address</div>
+                        <div class="col-1 px-0"> : </div>
+                        <div class="col-7 px-0"><b><address>
+                            Saroj Square,<br> 
+                            Munekolal,<br>
+                            Kundanahalli,<br>
+                            Bangalore,<br>
+                            Karnataka, 560007.
+                            </address></b>
+                        </div>
+                      </div>
+                    
+                </div>
+
+                <!-- <div class="col-6">
+                  <div class="row my-2 w-100 border p-2" style="height: 100px;">
+                    <h5><u>User Info</u></h5>
+
+                  </div>
+                  <div class="my-2 w-100 border p-2" style="height: 100px;">
+                    <h5><u>User Address</u></h5>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="my-2 w-100 border p-2" style="height: 100px;">
+                    <h5><u>Contact Information</u></h5>
+                  </div>
+                  <div class="my-2 w-100 border p-2" style="height: 100px;">
+                    <h5><u>Vendor Info</u></h5>
+                  </div>
+                </div> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+  		</div>
+  		<!-- /#page-content-wrapper -->
+
+
+
+		
+
+
+
+
+	</div>
+	  <!-- /#wrapper -->
+
+
+  
+
+  <!-- SCRIPTS -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+
+
+
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>

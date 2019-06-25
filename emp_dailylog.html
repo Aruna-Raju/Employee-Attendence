@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0" charset="utf-8">
+  <meta name="theme-color" content="#fff">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="icon" href="image/souq_icon2.png" type="icon">
+  <title>Employee Attendence Report</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+  <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+</head>
+
+<body>
+
+  	<div class="d-flex" id="wrapper">
+
+	    <!-- Sidebar -->
+	    <div class="mt-4 pt-4" id="sidebar-wrapper">
+	      <div class="sidebar-heading text-white"><i class="fas fa-user-circle fa-lg"> &nbsp;</i>Admin ID</div>
+	      <div class="list-group list-group-flush">
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='dashboard.html'">Dashboard</a>
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='index.html'">Employee</a>
+	        <a href="#" class="active list-group-item list-group-item-action text-white">Employee Daily Log</a>
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='login-signup.html'">Login/Signup</a>
+	      </div>
+	    </div>
+	    <!-- /#sidebar-wrapper -->
+
+	    <!-- Page Content -->
+	    <div id="page-content-wrapper">
+
+		    <nav class="navbar navbar-expand-sm fixed-top p-0 shadow">
+		    	<h3 class="text-white mb-0 py-0 py-md-2 float-left">HERFY ADMIN &nbsp; &nbsp;
+		    		<button class="btn text-white px-1 py-1 m-0 shadow-none d-md-none d-lg-none d-xl-none" id="menu-toggle"><i class="fas fa-bars fa-2x"></i></button>
+		    	</h3>
+		    </nav>
+
+		    	<div class="container mt-5">
+    			
+	    			<div class="row">
+	    				<div class="col-md-4 col-lg-3 col-xl-2"></div>
+	    				<div class="col-12 col-md-8 col-lg-9 col-xl-10">
+			    			<h4 class="mb-0 py-2" style="color: #3AAFA9; font-variant: small-caps;"><u>Employee Daily Logs :-</u></h4>
+			    			<br>
+			    			<div class="row">
+								<div class="table justify-content-center" style="overflow-x: scroll">
+									<table id="datatab" class="table table-striped" style="width:100%">
+										<thead style="white-space: nowrap;">
+											<tr>
+												<th>Date</th>
+												<th>Store ID</th>
+												<th>Emp ID</th>
+												<th>Name</th>
+												<th>Vendor ID</th>
+												<th>IN</th>
+												<th>Out</th>
+												<th>Status</th>
+												<th>Total Hrs</th>
+												<th>Regular Hrs</th>
+												<th>OT Hrs</th>
+											</tr>
+										</thead>
+										<tbody style="text-align: center;">
+											<tr>
+												<td>24/05/2019</td>
+												<td>1</td>
+												<td>10006</td>
+												<td>Ahmed</td>
+												<td>111</td>
+												<td>08:00</td>
+												<td>05:00</td>
+												<td>Present</td>
+												<td>13</td>
+												<td>8</td>
+												<td>4</td>
+											</tr>
+											<tr>
+												<td>24/05/2019</td>
+												<td>1</td>
+												<td>10007</td>
+												<td>Ahmed</td>
+												<td>111</td>
+												<td>08:00</td>
+												<td>05:00</td>
+												<td>Present</td>
+												<td>13</td>
+												<td>8</td>
+												<td>4</td>
+											</tr>
+											<tr>
+												<td>24/05/2019</td>
+												<td>1</td>
+												<td>10009</td>
+												<td>Ahmed</td>
+												<td>111</td>
+												<td>08:00</td>
+												<td>05:00</td>
+												<td>Present</td>
+												<td>13</td>
+												<td>8</td>
+												<td>4</td>
+											</tr>
+											<tr>
+												<td>24/05/2019</td>
+												<td>1</td>
+												<td>10008</td>
+												<td>Ahmed</td>
+												<td>111</td>
+												<td>08:00</td>
+												<td>05:00</td>
+												<td>Present</td>
+												<td>13</td>
+												<td>8</td>
+												<td>4</td>
+											</tr>
+											<tr>
+												<td>24/05/2019</td>
+												<td>1</td>
+												<td>10007</td>
+												<td>Ahmed</td>
+												<td>111</td>
+												<td>08:00</td>
+												<td>05:00</td>
+												<td>Present</td>
+												<td>13</td>
+												<td>8</td>
+												<td>4</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+	
+		</div>
+		<!-- /#page-content-wrapper -->
+
+	</div>
+	  <!-- /#wrapper -->
+
+
+  
+
+  <!-- SCRIPTS -->
+  	
+
+  <!-- JQuery -->
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+  
+
+
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+   <script type="text/javascript">
+        $(document).ready(function() {
+            $('#datatab').DataTable();
+        } );
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0" charset="utf-8">
+  <meta name="theme-color" content="#fff">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="icon" href="image/souq_icon2.png" type="icon">
+  <title>Employee Attendence Report</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  	<div class="d-flex" id="wrapper">
+
+	    <!-- Sidebar -->
+	    <div class="mt-4 pt-4" id="sidebar-wrapper">
+	      <div class="sidebar-heading text-white"><i class="fas fa-user-circle fa-lg"> &nbsp;</i>Admin ID</div>
+	      <div class="list-group list-group-flush">
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='dashboard.html'">Dashboard</a>
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='index.html'">Employee</a>
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='emp_dailylog.html'">Employee Daily Log</a>
+	        <a href="#" class="list-group-item list-group-item-action text-white" onclick="window.location.href='login-signup.html'">Login/Signup</a>
+	      </div>
+	    </div>
+	    <!-- /#sidebar-wrapper -->
+
+	    <!-- Page Content -->
+	    <div id="page-content-wrapper">
+
+		    <nav class="navbar navbar-expand-md fixed-top p-0 shadow">
+		    	<h3 class="text-white mb-0 py-0 py-md-2 float-left">HERFY ADMIN &nbsp; &nbsp;
+		    		<button class="btn text-white px-1 py-1 m-0 shadow-none d-md-none d-lg-none d-xl-none" id="menu-toggle"><i class="fas fa-bars fa-2x"></i></button>
+		    	</h3>
+		    </nav>
+		    <br>
+		    <div class="container mt-5">
+    			
+    			<div class="row">
+    				<div class="col-md-4 col-lg-3 col-xl-2"></div>
+    				<div class="col-12 col-md-8 col-lg-9 col-xl-10">
+		    			<h3 class="mb-0 py-2" style="color: #3AAFA9; font-variant: small-caps;"><u>Add Employee :-</u></h3>
+		    			<br>
+						<form action="/action_page.php">
+							<div class="form-group">
+								<label for="fname"><b>First Name :-</b></label>
+								<input type="text" class="form-control" id="fname" placeholder="Enter Your First Name" name="fname" required>
+							</div>
+							<div class="form-group">
+								<label for="lname"><b>Last Name :-</b></label>
+								<input type="text" class="form-control" id="lname" placeholder="Enter Your Last Name" name="lname" required>
+							</div>
+							<div class="form-group">
+								<label for="dob"><b>Date Of Birth :-</b></label>
+								<input type="date" class="form-control" id="dob" placeholder="Enter Vender ID" name="dob" required>
+							</div>
+							<div class="form-group">
+								<label for="gender"><b>Gender:-</b></label>
+							    <select class="form-control" id="gender" name="gender">
+							        <option>Select gender</option>
+							        <option>Male</option>
+							        <option>Female</option>
+							    </select>
+							</div>
+							<div class="form-group">
+								<label for="mob"><b>Mobile Number :-</b></label>
+								<input type="number" class="form-control" id="mob" placeholder="Enter Mobile Number" name="mob" required>
+							</div>
+							<div class="form-group">
+								<label for="email"><b>Email ID :-</b></label>
+								<input type="numbertext" class="form-control" id="email" placeholder="Enter Email ID" name="email" required>
+							</div>
+							<div class="form-group">
+								<label for="eid"><b>Employee ID :-</b></label>
+								<input type="number" class="form-control" id="eid" placeholder="Enter Employee ID" name="eid" required>
+							</div>
+							<div class="form-group">
+								<label for="vid"><b>Vendor:-</b></label>
+								<input type="numbertext" class="form-control" id="vid" placeholder="Enter Vendor" name="vid" required>
+							</div>
+							<div class="form-group">
+								<label for="branch"><b>Branch :-</b></label>
+							    <select class="form-control" id="Branch" name="branch">
+							        <option>Select Branch</option>
+							    </select>
+							</div>
+							<div class="form-group">
+								<label for="dep"><b>Department:-</b></label>
+								<input type="text" class="form-control" id="dep" placeholder="Enter Department" name="dep" required>
+							</div>
+							<div class="form-group">
+								<label for="hiringdate"><b>Hiring Date:-</b></label>
+								<input type="date" class="form-control" id="hiringdate" placeholder="Enter Hiring Date" name="hiringdate" required>
+							</div>
+							<div class="form-group">
+								<label for="desi"><b>Designation:-</b></label>
+								<input type="text" class="form-control" id="desi" placeholder="Enter Designation" name="desi" required>
+							</div>
+							<div class="form-group">
+								<label for="addr"><b>Address :-</b></label>
+								<textarea class="form-control" rows="2" id="addr" placeholder="Enter Address" name="addr" required></textarea>
+							</div>
+							<div class="form-group">
+								<label for="city"><b>City :-</b></label>
+								<input type="text" class="form-control" id="city" placeholder="Enter City" name="city" required>
+							</div>
+							<div class="form-group">
+								<label for="state"><b>State:-</b></label>
+							    <select class="form-control" id="state" name="state">
+							        <option>Select State</option>
+							    </select>
+							</div>
+							<div class="form-group">
+								<label for="pincode"><b>Pincode :-</b></label>
+								<input type="number" class="form-control" id="pincode" placeholder="Enter Pincode" name="pincode" required>
+							</div>
+							<div class="form-group">
+								<label for="uname"><b>Username :-</b></label>
+								<input type="numbertext" class="form-control" id="uname" placeholder="Enter User Name" name="uname" required>
+							</div>
+							<div class="form-group">
+								<label for="pswd"><b>Password :-</b></label>
+								<input type="password" class="form-control" id="pswd" placeholder="Enter Password" name="pswd" required>
+							</div>
+							<div class="form-group">
+								<label for="pswd"><b>Confirm Password :-</b></label>
+								<input type="password" class="form-control" id="pswd" placeholder="Confirm Password" name="pswd" required>
+							</div>
+							<div class="custom-file mb-3">
+						      <input type="file" class="custom-file-input" id="customFile" name="filename">
+						      <label class="custom-file-label" for="customFile">Upload File</label>
+						    </div>
+
+							<center><button type="submit" class="btn btn-primary">Submit</button></center>
+						</form>
+					</div>
+					<div class="col-md-0 col-lg-0 col-xl-0"></div>
+				</div>
+			</div>
+					
+		</div>
+		<!-- /#page-content-wrapper -->
+	</div>
+	  <!-- /#wrapper -->
+
+
+
+  <!-- SCRIPTS -->
+
+	<script type="text/javascript">
+		// Add the following code if you want the name of the file appear on select
+		$(".custom-file-input").on("change", function() {
+		  var fileName = $(this).val().split("\\").pop();
+		  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+		});
+	</script>
+	
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
